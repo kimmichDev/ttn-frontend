@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/venobox/dist/venobox.min.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+      .founder-wrapper {
+        position: relative;
+      }
+      .founder-wrapper span {
+        position: absolute;
+        cursor: pointer;
+      }
+      .founder-wrapper span:nth-child(3) {
+        top: -30px;
+        left: 30px;
+      }
+      .founder-wrapper span:nth-child(2) {
+        top: 0;
+        left: 0;
+        opacity: 85%;
+      }
+      .founder-wrapper span:nth-child(1) {
+        top: 30px;
+        left: -30px;
+        opacity: 80%;
+      }.founder-wrapper span{
+          transition: all 0.5s;
+      }
+      .founder-wrapper span:hover{
+        transform: scale(1.1);
+      }
+      .vbox-child img {
+        width: 70vw !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-5">
+          <span class="founder-wrapper">
+            <span>
+              <a class="venobox" href="img/cover1h.png" style="width: 100vw">
+                <img class="rounded" src="img/cover1h.png" alt="image alt" />
+              </a>
+            </span>
+            <span>
+                <a class="venobox" href="img/cover1h.png" style="width: 100vw">
+                  <img class="rounded" src="img/cover1h.png" alt="image alt" />
+                </a>
+              </span>
+            <span>
+                <a class="venobox" href="img/cover1h.png" style="width: 100vw">
+                  <img class="rounded" src="img/cover1h.png" alt="image alt" />
+                </a>
+              </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./node_modules/venobox/dist/venobox.min.js"></script>
+  <script>
+    new VenoBox({
+      selctor: ".venobox",
+    });
+  </script>
+</html>
