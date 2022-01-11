@@ -4,6 +4,19 @@
 .text-justify {
   text-align: justify;
 }
+.section-main-title {
+  width: fit-content;
+  margin: auto;
+}
+.section-main-title::after {
+  content: "";
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 2px;
+  background-color: #d2042d;
+  margin: 0.5rem auto;
+}
 
 body {
   scroll-behavior: smooth;
