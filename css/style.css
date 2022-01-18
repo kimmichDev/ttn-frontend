@@ -166,8 +166,8 @@ figcaption {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .activeContainer {
-    height: 275px !important;
+    height: 305px !important;
   }
 }
