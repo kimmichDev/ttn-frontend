@@ -56,7 +56,9 @@ body {
 }
 
 figcaption {
-  backdrop-filter: blur(8px) !important;
+  background-color: rgb(255 255 255 / 50%) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
