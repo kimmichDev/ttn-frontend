@@ -107,15 +107,7 @@ figcaption {
 
 .activeContainer {
   position: relative;
-  width: 50%;
-  height: 300px;
-}
-
-@media screen and (max-width: 768px) {
-  .activeContainer {
-    width: 100%;
-    height: 270px;
-  }
+  height: 500px;
 }
 
 .activeContainer .imghvr-slide-down {
@@ -159,5 +151,23 @@ figcaption {
 
   .ao-padding {
     padding-top: 50% !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .activeContainer {
+    height: 580px !important;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1025px) {
+  .activeContainer {
+    height: 430px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .activeContainer {
+    height: 275px !important;
   }
 }
