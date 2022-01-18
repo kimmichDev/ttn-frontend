@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="node_modules/venobox/dist/venobox.min.css" />
+    <link rel="stylesheet" href="node_modules/imagehover.css/css/imagehover.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/kzl.css">
+    <style>
+        .dropdown-hover-all .dropdown-menu,
+        .dropdown-hover > .dropdown-menu.dropend {
+            margin-left: -1px !important;
+        }
+        /*venobox*/
+        .founder-wrapper {
+            position: relative;
+            margin-left: 15rem !important;
+            margin-bottom: 15rem;
+        }
+        .founder-wrapper div {
+            position: absolute;
+            cursor: pointer;
+        }
+        .founder-wrapper div:nth-child(3) {
+            top: -30px;
+            left: -208px;
+        }
+        .founder-wrapper div:nth-child(2) {
+            top: 0;
+            left: -250px;
+            opacity: 85%;
+        }
+        .founder-wrapper div:nth-child(1) {
+            top: 30px;
+            left: -300px;
+            opacity: 80%;
+        }
+        .founder-wrapper div {
+            transition: all 0.5s;
+        }
+        .founder-wrapper div:hover {
+            transform: scale(1.1);
+        }
+        .vbox-child img {
+            width: 90vw !important;
+        }
+        @media (min-width: 768px) {
+            .vbox-child img {
+                width: auto !important;
+                height: 90vh !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- nav bar start -->
+<header class="container-fluid bg-danger position-fixed" id="header" style="z-index: 10; top: 0">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand w-25" href="#">
+                            <img src="img/image1.png" alt="" class="w-25" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" style="flex-grow: unset" id="navbarSupportedContent">
+                            <ul class="navbar-color navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="text-white nav-link dropdown-toggle active text-" href="#home" id="dropdown01" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Home </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown02">
+                                        <a class="dropdown-item" href="index.html#home">Home</a>
+                                        <a class="dropdown-item" href="#about">About Company</a>
+                                        <a class="dropdown-item" href="#vision_mission">Vision/Mission/ Objective</a>
+                                        <a class="dropdown-item" href="#founder">About Founder</a>
+                                        <a class="dropdown-item" href="#our-videos">Our Videos</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="text-white nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Regional Product </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown02">
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dor dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Tea </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                <a class="dropdown-item" href="tea.html"> Natural Tea </a>
+                                                <a class="dropdown-item" href="#"> Organic Tea </a>
+                                                <a class="dropdown-item" href="#">Healthy Tea</a>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="vegetable.html"> Vegetable </a>
+                                        <a class="dropdown-item" href="#"> Fruit </a>
+                                        <a class="dropdown-item" href="#"> Herb </a>
+                                        <a class="dropdown-item" href="#"> Local Products </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="text-white nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Value Chain </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown02">
+                                        <div class="dropdown">
+                                            <a class="dropdown-item" href="#"> Tea Processing</a>
+                                            <a class="dropdown-item" href="#"> Market </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="text-white nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Networking </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown02">
+                                        <div class="dropdown">
+                                            <a class="dropdown-item" href="#"> Local & International </a>
+                                            <a class="dropdown-item" href="#"> Sharing Knowledge</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="text-white nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Others </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown02">
+                                        <div class="dropdown">
+                                            <a class="dropdown-item" href="#"> Sustainability </a>
+                                            <a class="dropdown-item" href="#"> Training </a>
+                                            <a class="dropdown-item" href="#">Exhibition</a>
+                                            <a class="dropdown-item" href="#">Gallery</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-white nav-link" href="#"> Contact </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- nav bar end -->
+
+<!-- content start -->
+<section class="container" id="organic_tea">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-primary fw-bolder text-center my-3 section-main-title">Min Ga Lar Par</h1>
+        </div>
+        <div class="col-12">
+            <div class="card shadow shadow-sm">
+                <div class="card-body p-sm-2 p-md-4">
+
+                    <div class="d-flex justify-content-center">
+                        <ul class="nav nav-pills mb-3 mb-md-5" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link p-2 active m-text" id="pills-vegetable-tab" data-bs-toggle="pill" data-bs-target="#pills-vegetable" type="button" role="tab" aria-controls="pills-vegetable" aria-selected="true">Vegetable</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link p-2 m-text" id="pills-fruit-tab" data-bs-toggle="pill" data-bs-target="#pills-fruit" type="button" role="tab" aria-controls="pills-fruit" aria-selected="false">Fruit</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link p-2 m-text" id="pills-herb-tab" data-bs-toggle="pill" data-bs-target="#pills-herb" type="button" role="tab" aria-controls="pills-herb" aria-selected="false">Herb</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link p-2 m-text" id="pills-value-added-tab" data-bs-toggle="pill" data-bs-target="#pills-value-added" type="button" role="tab" aria-controls="pills-value-added" aria-selected="false">Value Added</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link p-2 m-text" id="pills-souvenir-tab" data-bs-toggle="pill" data-bs-target="#pills-souvenir" type="button" role="tab" aria-controls="pills-souvenir" aria-selected="false">Souvenir</button>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="pills-vegetable" role="tabpanel" aria-labelledby="pills-vegetable-tab">
+
+                            <div class="row">
+
+                                <div class="card shadow">
+                                    <div class="card-body p-1">
+                                        <div class="row">
+
+                                            <div class="col-6 p-1 padding-mobile col-md-6">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption class="pt-5">
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ကြက်သွန်ဖြူ
+                                                        </h2>
+                                                        <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 p-1 padding-mobile col-md-6">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ကြက်သွန်နီ
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+
+                                            <div class="justify-content-center">
+                                                <div class="col-12">
+                                                    <div class="my-2">
+                                                        <h2 class="fw-bold text-primary text-center">Green Tea</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-0 px-md-5 text-center">
+                                                    <div class="py-2">
+                                                        <p class=" p-0 p-md-2">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, saepe. Officiis pariatur nostrum enim, quod dignissimos rerum temporibus deleniti. Ipsa veritatis incidunt voluptatibus. Provident soluta, praesentium sapiente possimus odit illumLorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, saepe. Officiis pariatur nostrum enim, quod dignissimos rerum temporibus deleniti. Ipsa veritatis incidunt voluptatibus. Provident soluta, praesentium sapiente possimus odit
+                                                            illumLorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, saepe. Officiis pariatur nostrum enim, quod dignissimos rerum temporibus deleniti. Ipsa veritatis incidunt voluptatibus. Provident soluta, praesentium sapiente possimus odit illum.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow my-3 my-md-5">
+                                    <div class="card-body p-1">
+                                        <div class="row">
+                                            <div class="col-6 p-1 padding-mobile col-md-4">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ဂေါ်ဖီထုပ်
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 p-1 padding-mobile col-md-4">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            မုန်ညင်းထုပ်
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 p-1 padding-mobile col-md-4">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ပန်းမုန်လာ
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-6 p-1 padding-mobile col-md-4">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ရွှေပဲသီး
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 p-1 padding-mobile col-md-4">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ဂျူးမြစ်
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 p-1 padding-mobile col-md-4">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ကျောက်ဖရုံသီး
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-12 p-1 padding-mobile">
+                                                <figure class="imghvr-slide-down" style="width: 100%">
+                                                    <img src="img/kzl/1000x522.jpg" class="w-100 h-25" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ရွှေဖရုံသီး
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-6 p-1 padding-mobile col-md-4">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ကန်စွန်းဥ
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 p-1 padding-mobile col-md-4">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ပိန်းဥ
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 p-1 padding-mobile col-md-4">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ငရုတ်
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 p-1 padding-mobile col-md-4">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ခရမ်းချဥ်
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 p-1 padding-mobile col-md-4">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ခရမ်းသီး
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 p-1 padding-mobile col-md-4">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            သခွါးသီး
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow">
+                                    <div class="card-body p-1">
+                                        <div class="row">
+                                            <div class="col-6 p-1 padding-mobile col-md-6">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ရှမ်းပြောင်းဖူး
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 p-1 padding-mobile col-md-6">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            အာလူး
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+
+
+                                            <div class="col-12 p-1 padding-mobile">
+                                                <figure class="imghvr-slide-down" style="width: 100%">
+                                                    <img src="img/kzl/1000x522.jpg" class="w-100 h-25" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ပဲပုတ်စေ့
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+
+                                            <div class="col-6 p-1 padding-mobile col-md-6">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            ဒေသထွက်ပဲမျိုးစုံ
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 p-1 padding-mobile col-md-6">
+                                                <figure class="imghvr-slide-down">
+                                                    <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                                    <figcaption>
+                                                        <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                                            နှမ်းမဲလုံး 
+                                                        </h2>
+                                                         <div class="text-center py-3">
+                                                            <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                                View
+                                                                <i class="fas fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-fruit" role="tabpanel" aria-labelledby="pills-fruit-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 activeContainer">
+                                        
+                                        <figure class="imghvr-slide-down imageFigure activeFruit">
+                                            <img src="img/1.jpg" class="w-100 h-100" alt="">
+                                            <figcaption>
+                                                <h2 class="activeFruitName d-flex justify-content-center text-primary align-items-center">
+                                                    Mango
+                                                </h2>
+                                                    <div class="text-center py-3">
+                                                    <a class="position-relative btn btn-outline-primary activeFruitView" target="_blank" href="img/1.jpg">
+                                                        View
+                                                        <i class="fas fa-expand"></i>
+                                                    </a>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <figure class="imghvr-slide-down imageFigure">
+                                            <img src="img/2.jpg" class="img-fluid" alt="">
+                                            <figcaption>
+                                                <h2 class="activeFruitName d-flex justify-content-center text-primary align-items-center">
+                                                    Avocado
+                                                </h2>
+                                                    <div class="text-center py-3">
+                                                    <a class="position-relative btn btn-outline-primary activeFruitView" target="_blank" href="img/2.jpg">
+                                                        View
+                                                        <i class="fas fa-expand"></i>
+                                                    </a>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <figure class="imghvr-slide-down imageFigure">
+                                            <img src="img/3.jpg" class="img-fluid" alt="">
+                                            <figcaption>
+                                                <h2 class="activeFruitName d-flex justify-content-center text-primary align-items-center">
+                                                    Lemon
+                                                </h2>
+                                                    <div class="text-center py-3">
+                                                    <a class="position-relative btn btn-outline-primary activeFruitView" target="_blank" href="img/3.jpg">
+                                                        View
+                                                        <i class="fas fa-expand"></i>
+                                                    </a>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <figure class="imghvr-slide-down imageFigure">
+                                            <img src="img/4.jpg" class="img-fluid" alt="">
+                                            <figcaption>
+                                                <h2 class="activeFruitName d-flex justify-content-center text-primary align-items-center">
+                                                    Pin Mhe
+                                                </h2>
+                                                    <div class="text-center py-3">
+                                                    <a class="position-relative btn btn-outline-primary activeFruitView" target="_blank" href="img/4.jpg">
+                                                        View
+                                                        <i class="fas fa-expand"></i>
+                                                    </a>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                        <figure class="imghvr-slide-down imageFigure">
+                                            <img src="img/5.jpg" class="img-fluid" alt="">
+                                            <figcaption>
+                                                <h2 class="activeFruitName d-flex justify-content-center text-primary align-items-center">
+                                                    Dragon Fruit
+                                                </h2>
+                                                    <div class="text-center py-3">
+                                                    <a class="position-relative btn btn-outline-primary activeFruitView" target="_blank" href="img/5.jpg">
+                                                        View
+                                                        <i class="fas fa-expand"></i>
+                                                    </a>
+                                                </div>
+                                            </figcaption>
+                                        </figure>                    
+                  
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 my-3">
+                                        <div class="row ">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-6 mx-auto d-flex justify-content-center align-items-center">
+                                                        <img src="img/1.jpg" alt="Mango" class="fruits-active fruit w-50 h-75">
+                                                    </div>
+                                                    <div class="col-6 mx-auto d-flex justify-content-center align-items-center">
+                                                        <img src="img/2.jpg" alt="Avocado" class="fruit w-50 h-75">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!-- <div class="col-3"></div> -->
+                                                    <div class="col-6 mx-auto d-flex justify-content-center align-items-center">
+                                                        <img src="img/3.jpg" alt="Lemon" class="fruit w-50 h-75">
+                                                    </div>
+                                                    <!-- <div class="col-3"></div> -->
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 mx-auto d-flex justify-content-center align-items-center">
+                                                        <img src="img/4.jpg" alt="Pin Mhe" class="fruit w-50 h-75">
+                                                    </div>
+                                                    <div class="col-6 mx-auto d-flex justify-content-center align-items-center">
+                                                        <img src="img/5.jpg" alt="Dragon Fruit" class="fruit w-50 h-75">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-herb" role="tabpanel" aria-labelledby="pills-herb-tab">
+
+                          <div class="row">
+
+                              <div class="col-6 padding-mobile col-md-4">
+                                  <figure class="imghvr-slide-down">
+                                      <img src="img/kzl/1000x1000.jpg" class="img-fluid rounded shadow" alt="">
+                                      <figcaption>
+                                          <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                              Organic Ginger
+                                          </h2>
+                                          <div class="text-center py-3">
+                                              <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                  View
+                                                  <i class="fas fa-expand"></i>
+                                              </a>
+                                          </div>
+                                      </figcaption>
+                                  </figure>
+                              </div>
+
+                              <div class="col-6 padding-mobile col-md-4">
+                                  <figure class="imghvr-slide-down">
+                                      <img src="img/kzl/1000x1000.jpg" class="img-fluid rounded shadow" alt="">
+                                      <figcaption>
+                                          <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                              Organic Tumeric
+                                          </h2>
+                                          <div class="text-center py-3">
+                                              <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                  View
+                                                  <i class="fas fa-expand"></i>
+                                              </a>
+                                          </div>
+                                      </figcaption>
+                                  </figure>
+                              </div>
+
+                              <div class="col-6 padding-mobile col-md-4">
+                                  <figure class="imghvr-slide-down">
+                                      <img src="img/kzl/1000x1000.jpg" class="img-fluid rounded shadow" alt="">
+                                      <figcaption>
+                                          <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                              ကရဝေး
+                                          </h2>
+                                          <div class="text-center py-3">
+                                              <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                  View
+                                                  <i class="fas fa-expand"></i>
+                                              </a>
+                                          </div>
+                                      </figcaption>
+                                  </figure>
+                              </div>
+
+                              <div class="col-6 padding-mobile col-md-4">
+                                  <figure class="imghvr-slide-down">
+                                      <img src="img/kzl/1000x1000.jpg" class="img-fluid rounded shadow" alt="">
+                                      <figcaption>
+                                          <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                              သစ်ဂျပိုး
+                                          </h2>
+                                          <div class="text-center py-3">
+                                              <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                  View
+                                                  <i class="fas fa-expand"></i>
+                                              </a>
+                                          </div>
+                                      </figcaption>
+                                  </figure>
+                              </div>
+
+                              <div class="col-6 padding-mobile col-md-4">
+                                  <figure class="imghvr-slide-down">
+                                      <img src="img/kzl/1000x1000.jpg" class="img-fluid rounded shadow" alt="">
+                                      <figcaption>
+                                          <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                              ပျဥ်းတော်သိမ်
+                                          </h2>
+                                          <div class="text-center py-3">
+                                              <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                  View
+                                                  <i class="fas fa-expand"></i>
+                                              </a>
+                                          </div>
+                                      </figcaption>
+                                  </figure>
+                              </div>
+
+                              <div class="col-6 padding-mobile col-md-4">
+                                  <figure class="imghvr-slide-down">
+                                      <img src="img/kzl/1000x1000.jpg" class="img-fluid rounded shadow" alt="">
+                                      <figcaption>
+                                          <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                              ဆေးခါးကြီး
+                                          </h2>
+                                          <div class="text-center py-3">
+                                              <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                                  View
+                                                  <i class="fas fa-expand"></i>
+                                              </a>
+                                          </div>
+                                      </figcaption>
+                                  </figure>
+                              </div>
+
+                          </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-value-added" role="tabpanel" aria-labelledby="pills-value-added-tab">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12 my-3 d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="img/mango.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Mango</h5>
+                                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mangoModal">Export Product</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 my-3 d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="img/tea.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Tea</h5>
+                                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teaModal">Export Product</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 my-3 d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="img/others.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Others</h5>
+                                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#othersModal">Export Product</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-souvenir" role="tabpanel" aria-labelledby="pills-souvenir-tab">Souvenir</div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<!-- content end -->
+
+<!-- footer start -->
+
+<section class="container-fluid p-2 p-md-5 mt-2" id="footer">
+    <div class="row justify-content-center">
+        <div class="col-12 p-4 col-md-3">
+            <div>
+                <h3 class="text-primary fw-bold">All In One</h3>
+                <div class="d-flex align-items-center my-3">
+                    <div class="logo"></div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="" class="mx-2"><i class="fab fa-facebook-square fw"></i></a>
+                    <a href="" class="mx-2"><i class="fab fa-whatsapp fw"></i></a>
+                    <a href="" class="mx-2"><i class="fab fa-telegram fw"></i></a>
+                    <a href="" class="mx-2"><i class="fab fa-youtube fw"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 p-4 col-md-3">
+            <h3 class="fw-bold text-primary text-uppercase">Quick Links</h3>
+            <a href="#home" class="text-decoration-none">
+                <p class="bgcolor">Home</p>
+            </a>
+            <a href="#about" class="text-decoration-none">
+                <p class="bgcolor">About Company</p>
+            </a>
+            <a href="#vision_mission" class="text-decoration-none">
+                <p class="bgcolor">Vision/Mission/ Objective</p>
+            </a>
+            <a href="#founder" class="text-decoration-none">
+                <p class="bgcolor">About Owner</p>
+            </a>
+            <a href="#our-videos" class="text-decoration-none">
+                <p class="bgcolor">Title For Vids</p>
+            </a>
+        </div>
+        <div class="col-12 p-4 col-md-3 text-primary">
+            <h3 class="fw-bold text-primary text-uppercase">Hours</h3>
+            <p class="text-primary">Monday : 9:00 - 18:00</p>
+            <p class="text-primary">Monday : 9:00 - 18:00</p>
+            <p class="text-primary">Monday : 9:00 - 18:00</p>
+            <p class="text-primary">Monday : 9:00 - 18:00</p>
+            <p class="text-primary">Monday : 9:00 - 18:00</p>
+        </div>
+        <div class="col-12 p-4 col-md-3 text-primary">
+            <h3 class="fw-bold text-primary text-uppercase">Contact</h3>
+            <p class="pt-3 bgcolor"><i class="fa fa-phone"></i> 09-22233344</p>
+            <p class="bgcolor"><i class="fa fa-envelope"></i> admin@gmail.com</p>
+            <p class="bgcolor"><i class="fa fa-location-arrow"></i> PANSODAN STREET ,YANGON</p>
+        </div>
+    </div>
+</section>
+
+<!-- Mango Modal -->
+<div class="modal fade" id="mangoModal" tabindex="-1" aria-labelledby="mangoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mangoModalLabel">Mango Export Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-md-12">
+                    <figure class="imghvr-slide-down">
+                        <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                        <figcaption>
+                            <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                Mango Puree 
+                            </h2>
+                             <div class="text-center py-3">
+                                <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                    View
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <figure class="imghvr-slide-down">
+                        <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                        <figcaption>
+                            <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                Mango Jelly 
+                            </h2>
+                             <div class="text-center py-3">
+                                <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                    View
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <figure class="imghvr-slide-down">
+                        <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                        <figcaption>
+                            <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                Mango Leather 
+                            </h2>
+                             <div class="text-center py-3">
+                                <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                    View
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                  </div>
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  
+<!-- Tea Modal -->
+<div class="modal fade" id="teaModal" tabindex="-1" aria-labelledby="teaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="teaModalLabel">Mango Export Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                          <figure class="imghvr-slide-down">
+                              <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                              <figcaption>
+                                  <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                      Tea Solt
+                                  </h2>
+                                   <div class="text-center py-3">
+                                      <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                          View
+                                          <i class="fas fa-expand"></i>
+                                      </a>
+                                  </div>
+                              </figcaption>
+                          </figure>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                          <figure class="imghvr-slide-down">
+                              <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                              <figcaption>
+                                  <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                     Tea Sweet
+                                   <div class="text-center py-3">
+                                      <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                          View
+                                          <i class="fas fa-expand"></i>
+                                      </a>
+                                  </div>
+                              </figcaption>
+                          </figure>
+                        </div>     
+                    </div>
+                </div>
+              </div>      
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Other Modal -->
+<div class="modal fade" id="othersModal" tabindex="-1" aria-labelledby="othersModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="othersModalLabel">Mango Export Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                          <figure class="imghvr-slide-down">
+                              <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                              <figcaption>
+                                  <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                      Mango Puree 
+                                  </h2>
+                                   <div class="text-center py-3">
+                                      <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                          View
+                                          <i class="fas fa-expand"></i>
+                                      </a>
+                                  </div>
+                              </figcaption>
+                          </figure>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                          <figure class="imghvr-slide-down">
+                              <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                              <figcaption>
+                                  <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                      Mango Jelly 
+                                  </h2>
+                                   <div class="text-center py-3">
+                                      <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                          View
+                                          <i class="fas fa-expand"></i>
+                                      </a>
+                                  </div>
+                              </figcaption>
+                          </figure>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                          <figure class="imghvr-slide-down">
+                              <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                              <figcaption>
+                                  <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                      Mango Leather 
+                                  </h2>
+                                   <div class="text-center py-3">
+                                      <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                          View
+                                          <i class="fas fa-expand"></i>
+                                      </a>
+                                  </div>
+                              </figcaption>
+                          </figure>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <figure class="imghvr-slide-down">
+                                <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                <figcaption>
+                                    <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                        Mango Puree 
+                                    </h2>
+                                     <div class="text-center py-3">
+                                        <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                            View
+                                            <i class="fas fa-expand"></i>
+                                        </a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                          </div>
+                          <div class="col-lg-4 col-md-12">
+                            <figure class="imghvr-slide-down">
+                                <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                <figcaption>
+                                    <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                        Mango Jelly 
+                                    </h2>
+                                     <div class="text-center py-3">
+                                        <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                            View
+                                            <i class="fas fa-expand"></i>
+                                        </a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                          </div>
+                          <div class="col-lg-4 col-md-12">
+                            <figure class="imghvr-slide-down">
+                                <img src="img/kzl/1000x522.jpg" class="img-fluid rounded shadow" alt="">
+                                <figcaption>
+                                    <h2 class="d-flex justify-content-center text-primary align-items-center">
+                                        Mango Leather 
+                                    </h2>
+                                     <div class="text-center py-3">
+                                        <a class="position-relative btn btn-outline-primary" target="_blank" href="img/kzl/1000x522.jpg">
+                                            View
+                                            <i class="fas fa-expand"></i>
+                                        </a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                          </div>  
+                    </div>
+                </div>
+              </div>
+      
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!-- footer end -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/venobox/dist/venobox.min.js"></script>
+<script>
+    (function ($bs) {
+        const CLASS_NAME = "has-child-dropdown-show";
+        $bs.Dropdown.prototype.toggle = (function (_orginal) {
+            return function () {
+                document.querySelectorAll("." + CLASS_NAME).forEach(function (e) {
+                    e.classList.remove(CLASS_NAME);
+                });
+                let dd = this._element.closest(".dropdown").parentNode.closest(".dropdown");
+                for (; dd && dd !== document; dd = dd.parentNode.closest(".dropdown")) {
+                    dd.classList.add(CLASS_NAME);
+                }
+                return _orginal.call(this);
+            };
+        })($bs.Dropdown.prototype.toggle);
+
+        document.querySelectorAll(".dropdown").forEach(function (dd) {
+            dd.addEventListener("hide.bs.dropdown", function (e) {
+                if (this.classList.contains(CLASS_NAME)) {
+                    this.classList.remove(CLASS_NAME);
+                    e.preventDefault();
+                }
+                e.stopPropagation(); // do not need pop in multi level mode
+            });
+        });
+
+        // for hover
+        document.querySelectorAll(".dropdown-hover, .dropdown-hover-all .dropdown").forEach(function (dd) {
+            dd.addEventListener("mouseenter", function (e) {
+                let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+                if (!toggle.classList.contains("show")) {
+                    $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+                    dd.classList.add(CLASS_NAME);
+                    $bs.Dropdown.clearMenus();
+                }
+            });
+            dd.addEventListener("mouseleave", function (e) {
+                let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+                if (toggle.classList.contains("show")) {
+                    $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+                }
+            });
+        });
+    })(bootstrap);
+
+    //venobox
+    new VenoBox({
+        selctor: ".venobox",
+    });
+
+    let navbarHeight = $("#header").height();
+    $("#header")
+        .next(".container")
+        .css("margin-top", navbarHeight + "px");
+</script>
+
+<script>
+    const fruits = Array.from(document.querySelectorAll(".fruit"));
+    const activeFruit = document.querySelector(".activeFruit");
+    const imageFigure = Array.from(document.querySelectorAll(".imageFigure"));
+
+    fruits.map((fruit) => {
+        fruit.addEventListener("click" ,(e) =>{
+            fruits.forEach(fr =>{
+                fr.classList.remove("fruits-active");
+            })
+
+            imageFigure.forEach(image => {
+
+                if(image.classList.contains("activeFruit")){
+                    image.classList.remove("activeFruit");
+                }
+
+                if(image.firstElementChild.src === fruit.src){
+                    image.classList.add("activeFruit");
+                }
+            })
+            
+            document.querySelector(".activeFruitName").innerHTML = e.target.alt;
+            document.querySelector(".activeFruitView").href = e.target.src;
+            e.target.classList.add("fruits-active");
+        })
+    })
+</script>
+</body>
+</html>

@@ -2,6 +2,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap": "^5.1.3",
+    "imagehover.css": "^2.0.0",
     "jquery": "^3.6.0",
     "venobox": "^2.0.4"
   }

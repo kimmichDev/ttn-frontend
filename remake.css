@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* custom  */
+.text-justify {
+  text-align: justify;
+}
+.section-main-title {
+  width: fit-content;
+  margin: auto;
+}
+.section-main-title::after {
+  content: "";
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 2px;
+  background-color: #d2042d;
+  margin: 0.5rem auto;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+.navbar-color li div a:hover {
+  color: gold;
+  background-color: rgba(255, 0, 0, 0.65);
+}
+.nav-link:hover {
+  color: gold !important;
+  border-bottom: 1px solid gold;
+}
+.carousel-caption {
+  width: fit-content !important;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+}
+#about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.267), rgba(255, 255, 255, 0.842)), url("../img/aboutbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.vmbg {
+  background-image: url("../img/vmdecoration1.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 25%;
+  background-attachment: fixed;
+}
+.ao-bg {
+  background-image: linear-gradient(#fbc3c3, white);
+}
+.about-otext {
+  position: relative;
+  top: 400px;
+}
+
+#footer {
+  background: url("../img/tea-garden.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: red;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-caption {
+    transform: translateY(-20rem);
+    left: 50% !important;
+    top: 60% !important;
+    bottom: unset !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .vm-padding {
+    padding-top: 45% !important;
+  }
+
+  .ao-padding {
+    padding-top: 50% !important;
+  }
+}
+
+/* Fruits Start hms */
+
+.activeContainer {
+  position: relative;
+  width: 50%;
+  height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .activeContainer {
+    width: 100%;
+    height: 270px;
+  }
+}
+
+.activeContainer .imghvr-slide-down {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.activeContainer .activeFruit {
+  opacity: 1 !important;
+  z-index: 1 !important;
+}
+
+.fruits-active {
+  filter: grayscale(1.5);
+}
+
+/* Modal */
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.795) !important;
+}
