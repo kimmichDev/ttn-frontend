@@ -87,34 +87,81 @@ body {
   }
 }
 
+
 /* Fruits Start hms */
 
-.fruits-active {
+.activeContainer{
+  position: relative;
+  width: 50%;
+  height: 300px;
+}
+
+
+
+@media screen and (max-width: 768px){
+  .activeContainer{
+    width: 100%;
+    height: 270px;
+  }
+}
+
+.activeContainer .imghvr-slide-down{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.activeContainer .activeFruit{
+  opacity: 1 !important;
+  z-index: 1 !important;
+}
+
+.fruits-active{
   filter: grayscale(1.5);
 }
 
 /* Modal */
 
-.modal-content {
+.modal-content{
   background-color: rgba(255, 255, 255, 0.795) !important;
 }
 
 /* Others Image Gallary */
 
 .gallery-row {
-  column-count: 4;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 /* Responsive layout - makes a two gallery-column-layout instead of four gallery-columns */
 @media screen and (max-width: 800px) {
-  .gallery-row {
-    column-count: 3 !important;
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
   }
 }
 
 /* Responsive layout - makes the two gallery-columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .gallery-row {
-    column-count: 2 !important;
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
   }
 }
