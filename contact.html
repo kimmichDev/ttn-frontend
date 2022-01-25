@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="node_modules/venobox/dist/venobox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .dropdown-hover-all .dropdown-menu,
+      .dropdown-hover > .dropdown-menu.dropend {
+        margin-left: -1px !important;
+      }
+      /*venobox*/
+      .founder-wrapper {
+        position: relative;
+        margin-left: 15rem !important;
+        margin-bottom: 15rem;
+      }
+      .founder-wrapper div {
+        position: absolute;
+        cursor: pointer;
+      }
+      .founder-wrapper div:nth-child(3) {
+        top: -30px;
+        left: -208px;
+      }
+      .founder-wrapper div:nth-child(2) {
+        top: 0;
+        left: -250px;
+        opacity: 85%;
+      }
+      .founder-wrapper div:nth-child(1) {
+        top: 30px;
+        left: -300px;
+        opacity: 80%;
+      }
+      .founder-wrapper div {
+        transition: all 0.5s;
+      }
+      .founder-wrapper div:hover {
+        transform: scale(1.1);
+      }
+      .vbox-child img {
+        width: 90vw !important;
+      }
+      @media (min-width: 768px) {
+        .vbox-child img {
+          width: auto !important;
+          height: 90vh !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container-fluid bg-danger position-fixed" id="header" style="z-index: 10; top: 0">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <a class="navbar-brand w-25" href="#">
+                  <img src="img/image1.png" alt="" class="w-25" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" style="flex-grow: unset" id="navbarSupportedContent">
+                  <ul class="navbar-color navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="text-white nav-link dropdown-toggle active text-" href="#home" id="dropdown01" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Home </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <a class="dropdown-item" href="index.html#home">Home</a>
+                        <a class="dropdown-item" href="#about">About Company</a>
+                        <a class="dropdown-item" href="#vision_mission">Vision/Mission/ Objective</a>
+                        <a class="dropdown-item" href="#founder">About Founder</a>
+                        <a class="dropdown-item" href="#our-videos">Our Videos</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="text-white nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Regional Product </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <div class="dropdown">
+                          <a class="dropdown-item dor dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Tea </a>
+                          <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                            <a class="dropdown-item" href="tea.html"> Natural Tea </a>
+                            <a class="dropdown-item" href="#"> Organic Tea </a>
+                            <a class="dropdown-item" href="#">Healthy Tea</a>
+                          </div>
+                        </div>
+                        <a class="dropdown-item" href="vegetable.html"> Vegetable </a>
+                        <a class="dropdown-item" href="#"> Fruit </a>
+                        <a class="dropdown-item" href="#"> Herb </a>
+                        <a class="dropdown-item" href="#"> Local Products </a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="text-white nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Value Chain </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <div class="dropdown">
+                          <a class="dropdown-item" href="#"> Tea Processing</a>
+                          <a class="dropdown-item" href="#"> Market </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="text-white nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Networking </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <div class="dropdown">
+                          <a class="dropdown-item" href="#"> Local & International </a>
+                          <a class="dropdown-item" href="#"> Sharing Knowledge</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="text-white nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Others </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <div class="dropdown">
+                          <a class="dropdown-item" href="#"> Sustainability </a>
+                          <a class="dropdown-item" href="#"> Training </a>
+                          <a class="dropdown-item" href="#">Exhibition</a>
+                          <a class="dropdown-item" href="#">Gallery</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="text-white nav-link" href="#"> Contact </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="officeLocation" class="container">
+      <div class="container shadow">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-primary fw-bolder text-center my-3 section-main-title">Office Address</h2>
+          </div>
+        </div>
+        <div class="row p-3 align-items-center">
+          <div class="col-12 col-md-6 mt-2 mt-md-0">
+            <div>
+              <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.3581952945356!2d96.66160011542914!3d20.938125786047507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x30d4f1eae1303f4c!2zMjDCsDU2JzE3LjMiTiA5NsKwMzknNDkuNiJF!5e0!3m2!1sen!2smm!4v1643090162625!5m2!1sen!2smm" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 mt-2 mt-md-0 officeLocation">
+            <div class="card shadow">
+              <div class="card-body">
+                <div class="">
+                  <div class="d-flex text-primary">
+                    <i class="fas fa-map-marked-alt me-2"></i>
+                    <p class="fw-bold">Address</p>
+                  </div>
+                  <p>Singoung Quarter, Pindaya Township, Southern Shan State, Myanmar.</p>
+                </div>
+                <div class="">
+                  <div class="d-flex text-primary">
+                    <i class="fas fa-envelope me-2"></i>
+                    <p class="fw-bold">Email</p>
+                  </div>
+                  <p><a class="text-decoration-none text-black" href="mailto:tharaphu.ttn@gmail.com">tharaphu.ttn@gmail.com</a></p>
+                </div>
+                <div class="">
+                  <div class="d-flex text-primary">
+                    <i class="fas fa-mobile me-2"></i>
+                    <p class="fw-bold">Phone</p>
+                  </div>
+                  <p><a class="text-decoration-none text-black" href="tel:+959786158009">+959786158009</a></p>
+                </div>
+                <div>
+                  <a href="tel:+959250340725" class="btn btn-primary"><i class="fas fa-mobile-alt me-2"></i>Call Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="officeLocation" class="container mt-2">
+      <div class="container shadow">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-primary fw-bolder text-center my-3 section-main-title">Office Address</h2>
+          </div>
+        </div>
+        <div class="row p-3 align-items-center">
+          <div class="col-md-6 col-12 mt-2 mt-md-0 officeLocation">
+            <div class="card shadow">
+              <div class="card-body">
+                <div class="">
+                  <div class="d-flex text-primary">
+                    <i class="fas fa-map-marked-alt me-2"></i>
+                    <p class="fw-bold">Address</p>
+                  </div>
+                  <p>Taung Tan Ni Tea Factory, Htin Shuu Kone Village, Pindaya Township, Southern Shan State, Myanmar</p>
+                </div>
+                <div class="">
+                  <div class="d-flex text-primary">
+                    <i class="fas fa-envelope me-2"></i>
+                    <p class="fw-bold">Email</p>
+                  </div>
+                  <p><a class="text-decoration-none text-black" href="mailto:tharaphu.ttn@gmail.com">tharaphu.ttn@gmail.com</a></p>
+                </div>
+                <div class="">
+                  <div class="d-flex text-primary">
+                    <i class="fas fa-mobile me-2"></i>
+                    <p class="fw-bold">Phone</p>
+                  </div>
+                  <p><a class="text-decoration-none text-black" href="tel:+959250340725">+959250340725</a></p>
+                </div>
+                <div>
+                  <a href="tel:+959786158009" class="btn btn-primary"><i class="fas fa-mobile-alt me-2"></i>Call Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mt-2 mt-md-0">
+            <div>
+              <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.3581952945356!2d96.66160011542914!3d20.938125786047507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x30d4f1eae1303f4c!2zMjDCsDU2JzE3LjMiTiA5NsKwMzknNDkuNiJF!5e0!3m2!1sen!2smm!4v1643090162625!5m2!1sen!2smm" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-2 p-md-5" id="footer">
+      <div class="row justify-content-center">
+        <div class="col-12 p-4 col-md-3">
+          <div>
+            <h3 class="text-primary fw-bold">All In One</h3>
+            <div class="d-flex align-items-center my-3">
+              <div class="logo"></div>
+            </div>
+            <div class="d-flex align-items-center">
+              <a href="" class="mx-2"><i class="fab fa-facebook-square fw"></i></a>
+              <a href="" class="mx-2"><i class="fab fa-whatsapp fw"></i></a>
+              <a href="" class="mx-2"><i class="fab fa-telegram fw"></i></a>
+              <a href="" class="mx-2"><i class="fab fa-youtube fw"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 p-4 col-md-3">
+          <h3 class="fw-bold text-primary text-uppercase">Quick Links</h3>
+          <a href="#home" class="text-decoration-none">
+            <p class="bgcolor">Home</p>
+          </a>
+          <a href="#about" class="text-decoration-none">
+            <p class="bgcolor">About Company</p>
+          </a>
+          <a href="#vision_mission" class="text-decoration-none">
+            <p class="bgcolor">Vision/Mission/ Objective</p>
+          </a>
+          <a href="#founder" class="text-decoration-none">
+            <p class="bgcolor">About Owner</p>
+          </a>
+          <a href="#our-videos" class="text-decoration-none">
+            <p class="bgcolor">Title For Vids</p>
+          </a>
+        </div>
+        <div class="col-12 p-4 col-md-3 text-primary">
+          <h3 class="fw-bold text-primary text-uppercase">Hours</h3>
+          <p class="text-primary">Monday : 9:00 - 18:00</p>
+          <p class="text-primary">Monday : 9:00 - 18:00</p>
+          <p class="text-primary">Monday : 9:00 - 18:00</p>
+          <p class="text-primary">Monday : 9:00 - 18:00</p>
+          <p class="text-primary">Monday : 9:00 - 18:00</p>
+        </div>
+        <div class="col-12 p-4 col-md-3 text-primary">
+          <h3 class="fw-bold text-primary text-uppercase">Contact</h3>
+          <p class="pt-3 bgcolor"><i class="fa fa-phone"></i> 09-22233344</p>
+          <p class="bgcolor"><i class="fa fa-envelope"></i> admin@gmail.com</p>
+          <p class="bgcolor"><i class="fa fa-location-arrow"></i> PANSODAN STREET ,YANGON</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/venobox/dist/venobox.min.js"></script>
+    <script>
+      (function ($bs) {
+        const CLASS_NAME = "has-child-dropdown-show";
+        $bs.Dropdown.prototype.toggle = (function (_orginal) {
+          return function () {
+            document.querySelectorAll("." + CLASS_NAME).forEach(function (e) {
+              e.classList.remove(CLASS_NAME);
+            });
+            let dd = this._element.closest(".dropdown").parentNode.closest(".dropdown");
+            for (; dd && dd !== document; dd = dd.parentNode.closest(".dropdown")) {
+              dd.classList.add(CLASS_NAME);
+            }
+            return _orginal.call(this);
+          };
+        })($bs.Dropdown.prototype.toggle);
+
+        document.querySelectorAll(".dropdown").forEach(function (dd) {
+          dd.addEventListener("hide.bs.dropdown", function (e) {
+            if (this.classList.contains(CLASS_NAME)) {
+              this.classList.remove(CLASS_NAME);
+              e.preventDefault();
+            }
+            e.stopPropagation(); // do not need pop in multi level mode
+          });
+        });
+
+        // for hover
+        document.querySelectorAll(".dropdown-hover, .dropdown-hover-all .dropdown").forEach(function (dd) {
+          dd.addEventListener("mouseenter", function (e) {
+            let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+            if (!toggle.classList.contains("show")) {
+              $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+              dd.classList.add(CLASS_NAME);
+              $bs.Dropdown.clearMenus();
+            }
+          });
+          dd.addEventListener("mouseleave", function (e) {
+            let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+            if (toggle.classList.contains("show")) {
+              $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+            }
+          });
+        });
+      })(bootstrap);
+
+      //venobox
+      new VenoBox({
+        selctor: ".venobox",
+      });
+
+      let navbarHeight = $("#header").height();
+      $("#header")
+        .next(".container")
+        .css("margin-top", navbarHeight + "px");
+    </script>
+  </body>
+</html>
