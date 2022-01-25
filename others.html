@@ -53,6 +53,9 @@
           height: 90vh !important;
         }
       }
+      #header {
+        transition: top 0.5s;
+      }
     </style>
   </head>
   <body>
@@ -110,8 +113,8 @@
                       <a class="text-white nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Networking </a>
                       <div class="dropdown-menu" aria-labelledby="dropdown02">
                         <div class="dropdown">
-                          <a class="dropdown-item" href="#"> Local & International </a>
-                          <a class="dropdown-item" href="#"> Sharing Knowledge</a>
+                          <a class="dropdown-item" href="network.html#collaboration"> Local & International </a>
+                          <a class="dropdown-item" href="network.html#sharingKnowledge"> Sharing Knowledge</a>
                         </div>
                       </div>
                     </li>
@@ -119,15 +122,15 @@
                       <a class="text-white nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Others </a>
                       <div class="dropdown-menu" aria-labelledby="dropdown02">
                         <div class="dropdown">
-                          <a class="dropdown-item" href="#"> Sustainability </a>
-                          <a class="dropdown-item" href="#"> Training </a>
-                          <a class="dropdown-item" href="#">Exhibition</a>
-                          <a class="dropdown-item" href="#">Gallery</a>
+                          <a class="dropdown-item" href="others.html#sustainability"> Sustainability </a>
+                          <a class="dropdown-item" href="others.html#training"> Training </a>
+                          <a class="dropdown-item" href="others.html#exhibition">Exhibition</a>
+                          <a class="dropdown-item" href="others.html#gallery">Gallery</a>
                         </div>
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="text-white nav-link" href="#"> Contact </a>
+                      <a class="text-white nav-link" href="contact.html"> Contact </a>
                     </li>
                   </ul>
                 </div>
@@ -371,7 +374,18 @@
       let navbarHeight = $("#header").height();
       $("#header")
         .next(".container")
-        .css("margin-top", navbarHeight + "px");
+        .css("padding-top", navbarHeight + "px");
+
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("header").style.top = "0";
+        } else {
+          document.getElementById("header").style.top = -navbarHeight + "px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
     </script>
   </body>
 </html>
